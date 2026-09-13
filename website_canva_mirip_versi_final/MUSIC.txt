@@ -1,2 +1,0 @@
-Letakkan lagu MP3 kamu di folder ini dengan nama: music.mp3
-Setelah itu buka index.html. Musik mulai setelah interaksi (CLICK/NEXT), karena browser biasanya memblokir autoplay sebelum ada interaksi pengguna.
