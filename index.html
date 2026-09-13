@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>For My Favorite Person</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="musicControl" class="music-control">♫</div>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main id="book">
+    <section class="scene active" id="page1">
+      <img src="page1.png" alt="">
+      <button class="hotspot page1-click" data-next="page2" aria-label="Click"></button>
+    </section>
+
+    <section class="scene" id="page2">
+      <img src="page2.png" alt="">
+      <button class="hotspot message" data-next="page3" aria-label="message"></button>
+      <button class="hotspot memories" data-next="page4" aria-label="memories"></button>
+      <button class="hotspot flowers" data-next="page5" aria-label="flowers"></button>
+    </section>
+
+    <section class="scene" id="page3">
+      <img src="page3.png" alt="">
+      <button class="hotspot next3" data-next="page4" aria-label="NEXT"></button>
+    </section>
+
+    <section class="scene" id="page4">
+      <img src="page4.png" alt="">
+      <button class="hotspot next4" data-next="page5" aria-label="NEXT"></button>
+    </section>
+
+    <section class="scene" id="page5">
+      <img src="page5.png" alt="">
+      <button class="hotspot next5" data-next="page2" aria-label="NEXT"></button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
